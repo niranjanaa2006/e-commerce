@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Product Details</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+      <h1>Product Details</h1>
+
+      <a href="index.html">
+          Home
+      </a>
+
+  </nav>
+
+  <!-- PRODUCT DETAILS -->
+
+  <div class="details-container"
+       id="detailsContainer">
+
+  </div>
+
+  <!-- REVIEW SECTION -->
+
+  <div class="review-section">
+
+      <h2>
+          Customer Reviews ⭐
+      </h2>
+
+      <input type="text"
+             id="reviewName"
+             placeholder="Your Name">
+
+      <textarea id="reviewText"
+                placeholder="Write Review">
+      </textarea>
+
+      <select id="reviewRating">
+
+          <option value="5">
+              5 ⭐
+          </option>
+
+          <option value="4">
+              4 ⭐
+          </option>
+
+          <option value="3">
+              3 ⭐
+          </option>
+
+          <option value="2">
+              2 ⭐
+          </option>
+
+          <option value="1">
+              1 ⭐
+          </option>
+
+      </select>
+
+      <button onclick="addReview()">
+
+          Submit Review
+
+      </button>
+
+      <!-- REVIEWS -->
+
+      <div id="reviewsContainer"></div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="product.js"></script>
+
+  <script src="details.js"></script>
+
+</body>
+</html>

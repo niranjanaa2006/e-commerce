@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Mini Amazon</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+      <h1>Amazon</h1>
+
+      <input type="text"
+             id="searchInput"
+             placeholder="Search products">
+
+      <a href="cart.html" class="cart-link">
+
+    Cart 🛒
+
+    <span id="cartCount" class="cart-count">
+        0
+    </span>
+
+</a>
+
+      <a href="wishlist.html">
+          Wishlist ❤️
+      </a>
+
+      
+
+      <div class="nav-user">
+
+          <span id="username"></span>
+
+          <button onclick="logout()">
+              Logout
+          </button>
+
+      </div>
+
+  </nav>
+
+  <!-- SLIDER -->
+
+  <div class="slider">
+
+      <!-- SLIDE 1 -->
+
+      <div class="slides fade">
+
+          <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f">
+
+          <div class="slide-content">
+
+              <h1>
+                  50% OFF Electronics 🎉
+              </h1>
+
+              <button>
+                  Shop Now
+              </button>
+
+          </div>
+
+      </div>
+
+      <!-- SLIDE 2 -->
+
+      <div class="slides fade">
+
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+
+          <div class="slide-content">
+
+              <h1>
+                  Fashion Sale 🔥
+              </h1>
+
+              <button>
+                  Explore
+              </button>
+
+          </div>
+
+      </div>
+
+      <!-- SLIDE 3 -->
+
+      <div class="slides fade">
+
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+
+          <div class="slide-content">
+
+              <h1>
+                  Accessories Collection ✨
+              </h1>
+
+              <button>
+                  Buy Now
+              </button>
+
+          </div>
+
+      </div>
+
+  </div>
+  <div class="sort-container">
+
+    <select id="sortSelect">
+
+        <option value="">
+            Sort Products
+        </option>
+
+        <option value="low-high">
+            Price: Low To High
+        </option>
+
+        <option value="high-low">
+            Price: High To Low
+        </option>
+
+        <option value="rating">
+            Rating
+        </option>
+
+        <option value="az">
+            Name: A-Z
+        </option>
+
+    </select>
+
+</div>
+
+  <!-- PRODUCTS -->
+
+  <div class="products-container"
+       id="productsContainer">
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="product.js"></script>
+
+  <script src="script.js"></script>
+
+  <script src="auth.js"></script>
+
+</body>
+</html>
